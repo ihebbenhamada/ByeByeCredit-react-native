@@ -1,0 +1,16 @@
+export type routeName =
+  | 'main-login'
+  | 'login'
+  | 'username'
+  | 'date-of-birth'
+  | 'gender'
+  | 'country'
+  | 'cin'
+  | 'email'
+  | 'phone-number'
+  | 'password'
+  | 'verification-code'
+  | 'privacy-policy'
+  | 'info-verification'
+  | 'info-correction'
+  | 'profile-picture';
