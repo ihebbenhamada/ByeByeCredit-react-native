@@ -7,15 +7,17 @@ import {
   google,
   imagePlaceHolder,
   search,
+  success
 } from '../../../../assets/icons';
 
 export const ICONS = {
-  apple,
-  facebook,
-  google,
-  arrowBack,
-  eyeSlash,
-  close,
-  imagePlaceHolder,
-  search,
+    apple,
+    facebook,
+    google,
+    arrowBack,
+    eyeSlash,
+    close,
+    imagePlaceHolder,
+    search,
+    success
 };

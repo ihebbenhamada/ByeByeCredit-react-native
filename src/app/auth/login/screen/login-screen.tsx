@@ -12,7 +12,7 @@ import {
 import {ICONS} from '../../../../config/constants/icons';
 import {heightPercentageToDP} from '../../../../utils/dimensions';
 import {ByeByeButton} from '../../../../components/shared/bye-bye-button';
-import SocialLogin from '../../../../components/social-login/social-login';
+import SocialLogin from '../../../../components/shared/social-login/social-login';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../../../navigation/auth/auth-stack';
 import {useNavigation} from '@react-navigation/native';

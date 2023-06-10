@@ -9,7 +9,6 @@ import {Pressable, Text} from 'react-native';
 import {Header} from '../../../../components/shared/header';
 import {ByeByeButton} from '../../../../components/shared/bye-bye-button';
 
-// @ts-ignore
 const InfoVerificationScreen: FC<any> = () => {
   /// NAVIGATION
   const navigation =
@@ -17,7 +16,7 @@ const InfoVerificationScreen: FC<any> = () => {
   /// STATES
   /// CALLBACK
   const handleClickSave = () => {
-    navigation.navigate('phoneNumber');
+    navigation.navigate('privacyPolicy');
   };
   const handleClickLogin = () => {
     navigation.navigate('login');

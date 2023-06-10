@@ -4,7 +4,7 @@ import {Spacer} from '../../../../components';
 import {IMAGES} from '../../../../config/constants/images';
 import {BaseView} from '../../../../components/shared/base-view';
 import {ByeByeButton} from '../../../../components/shared/bye-bye-button';
-import SocialLogin from '../../../../components/social-login/social-login';
+import SocialLogin from '../../../../components/shared/social-login/social-login';
 import {Footer} from '../../../../components/shared/footer';
 import {styles} from './styles';
 import {useNavigation} from '@react-navigation/native';

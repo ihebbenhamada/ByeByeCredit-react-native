@@ -1,6 +1,7 @@
-import {logo, profilePic} from '../../../../assets/images';
+import {imagePlaceHolder, logo, profilePic} from '../../../../assets/images';
 
 export const IMAGES = {
-  logo,
-  profilePic,
+    logo,
+    profilePic,
+    imagePlaceHolder
 };

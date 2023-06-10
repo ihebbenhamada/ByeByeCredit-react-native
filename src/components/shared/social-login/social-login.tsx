@@ -1,9 +1,9 @@
 import React from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
-import {heightPercentageToDP} from '../../utils/dimensions';
-import {COLORS} from '../../config/constants/colors';
-import {ICONS} from '../../config/constants/icons';
-import {Spacer} from '../shared';
+import {heightPercentageToDP} from '../../../utils/dimensions';
+import {COLORS} from '../../../config/constants/colors';
+import {ICONS} from '../../../config/constants/icons';
+import {Spacer} from '../index';
 
 const SocialLogin: React.FC<{}> = ({}) => {
   return (

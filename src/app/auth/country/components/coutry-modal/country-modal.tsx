@@ -15,7 +15,7 @@ import {COLORS} from '../../../../../config/constants/colors';
 import {widthPercentageToDP} from '../../../../../utils/dimensions';
 import {Spacer} from '../../../../../components';
 import {styles} from './styles';
-
+import { orderBy } from 'lodash';
 interface CountryModalProps {
   isVisible: boolean;
   onClose: () => void;
@@ -37,14 +37,13 @@ const CountryModal: React.FC<CountryModalProps> = ({
       try {
         const response = await fetch('https://restcountries.com/v3.1/all');
         const data: Country[] = await response.json();
-        setCountries(data);
-        setFilteredCountries(data);
-        console.log('data' + data[0].name.common);
+        const sortedData = orderBy(data, [(item) => item.name.common]);
+        setCountries(sortedData);
+        setFilteredCountries(sortedData);
       } catch (error) {
         console.error('Error fetching countries:', error);
       }
     };
-    console.log('modal country');
 
     fetchCountries();
   }, []);
@@ -61,7 +60,6 @@ const CountryModal: React.FC<CountryModalProps> = ({
     );
     setFilteredCountries(filtered);
   };
-
   const renderItem = ({item}: {item: Country}) => (
     <Pressable
       style={styles.itemContainer}

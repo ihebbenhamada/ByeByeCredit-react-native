@@ -6,14 +6,16 @@ import close from './close.png';
 import arrowBack from './arrow-back.png';
 import imagePlaceHolder from './place-holder.png';
 import search from './search.png';
+import success from './success.png';
 
 export {
-  apple,
-  facebook,
-  google,
-  close,
-  arrowBack,
-  eyeSlash,
-  imagePlaceHolder,
-  search,
+    apple,
+    facebook,
+    google,
+    close,
+    arrowBack,
+    eyeSlash,
+    imagePlaceHolder,
+    search,
+    success
 };

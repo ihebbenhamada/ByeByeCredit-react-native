@@ -8,6 +8,7 @@ import {RootStackParamList} from '../../../../navigation/auth/auth-stack';
 import {
   Image,
   KeyboardAvoidingView,
+
   Platform,
   Pressable,
   Text,
