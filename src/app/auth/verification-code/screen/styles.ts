@@ -25,7 +25,6 @@ export const styles = StyleSheet.create({
     },
     options: {
         marginBottom: heightPercentageToDP(2.5),
-        paddingHorizontal: widthPercentageToDP(6.4),
     },
     option: {
         paddingLeft: widthPercentageToDP(4.266666666666667),

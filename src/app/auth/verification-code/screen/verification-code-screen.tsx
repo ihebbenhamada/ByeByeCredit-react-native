@@ -5,7 +5,7 @@ import {Spacer} from '../../../../components';
 import {useNavigation} from "@react-navigation/native";
 import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 import {RootStackParamList} from "../../../../navigation/auth/auth-stack";
-import {KeyboardAvoidingView, Platform, Pressable, Text, View} from "react-native";
+import {Pressable, Text, View} from "react-native";
 import {Header} from "../../../../components/shared/header";
 import {ByeByeButton} from "../../../../components/shared/bye-bye-button";
 import {CodeField, Cursor, useBlurOnFulfill, useClearByFocusCell,} from "react-native-confirmation-code-field";
@@ -18,7 +18,7 @@ const VerificationCodeScreen: FC<any> = () => {
     const navigation =
         useNavigation<NativeStackNavigationProp<RootStackParamList>>();
     /// STATES
-    const cellCount = 4;
+    const cellCount = 6;
     const [value, setValue] = useState<string>('');
     const ref = useBlurOnFulfill({value, cellCount: cellCount});
     const [props, getCellOnLayoutHandler] = useClearByFocusCell({
@@ -55,11 +55,8 @@ const VerificationCodeScreen: FC<any> = () => {
 
     /// VIEW
     return (
-        <KeyboardAvoidingView
-            style={styles.keyboardAvoidingView}
-            behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-            keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}>
-            <BaseView style={styles.container}>
+        <BaseView>
+            <Pressable style={{flex: 1}}>
                 <Header/>
                 <Spacer height={3.188423645320197}/>
                 <Text style={styles.title}>Entez la code de confirmation </Text>
@@ -91,8 +88,7 @@ const VerificationCodeScreen: FC<any> = () => {
                         )}
                     />
                 </View>
-
-            </BaseView>
+            </Pressable>
             <Pressable style={styles.options}>
                 <ByeByeButton text={'Continue'} onClick={handleClickContinue}/>
                 <Spacer height={4.433497536945813}/>
@@ -112,7 +108,7 @@ const VerificationCodeScreen: FC<any> = () => {
                 onClose={handleCloseModal}
                 handleClickNext={handleSuccessNext}
             />
-        </KeyboardAvoidingView>
+        </BaseView>
     );
 };
 

@@ -1,13 +1,14 @@
 import {
-  apple,
-  arrowBack,
-  close,
-  eyeSlash,
-  facebook,
-  google,
-  imagePlaceHolder,
-  search,
-  success
+    apple,
+    arrowBack,
+    close,
+    eyeSlash,
+    eyeVisible,
+    facebook,
+    google,
+    imagePlaceHolder,
+    search,
+    success
 } from '../../../../assets/icons';
 
 export const ICONS = {
@@ -19,5 +20,6 @@ export const ICONS = {
     close,
     imagePlaceHolder,
     search,
-    success
+    success,
+    eyeVisible
 };

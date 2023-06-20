@@ -37,7 +37,7 @@ const ProfilePictureScreen: FC<any> = () => {
     }
     /// VIEW
     return (
-        <BaseView style={styles.container}>
+        <BaseView>
             <Header/>
             <Spacer height={3.188423645320197}/>
             <Text style={styles.title}>Ajouter votre photo de profil</Text>

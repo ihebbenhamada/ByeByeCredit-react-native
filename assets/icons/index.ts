@@ -7,6 +7,7 @@ import arrowBack from './arrow-back.png';
 import imagePlaceHolder from './place-holder.png';
 import search from './search.png';
 import success from './success.png';
+import eyeVisible from './eye-visible.png';
 
 export {
     apple,
@@ -17,5 +18,6 @@ export {
     eyeSlash,
     imagePlaceHolder,
     search,
-    success
+    success,
+    eyeVisible
 };

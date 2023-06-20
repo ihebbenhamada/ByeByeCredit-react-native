@@ -37,7 +37,7 @@ const ByeByeButton: React.FC<{
 export default ByeByeButton;
 const styles = StyleSheet.create({
     container: {
-        height: heightPercentageToDP(5.911330049261084),
+        height: heightPercentageToDP(7.389162561576355),
         borderColor: COLORS.blue,
         borderRadius: 12,
         alignItems: 'center',
